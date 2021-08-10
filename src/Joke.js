@@ -1,5 +1,4 @@
   import {Component} from 'react';
-import JokeList from './JokeList';
 import './Joke.css';
 
 class Joke extends Component{
@@ -51,7 +50,7 @@ class Joke extends Component{
           {this.props.text}
         </div>
         <div className="Joke-smiley">
-        <i className={this.getEmoji()} aria-role="presentation" aria-label={this.getEmoji()}></i>
+        <i className={this.getEmoji()} role="presentation" aria-label={this.getEmoji()}></i>
         </div>
       </div>
     );
